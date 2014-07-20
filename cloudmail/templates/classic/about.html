@@ -1,0 +1,48 @@
+{% extends 'base1.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <article class="is-post is-post-excerpt">
+        <header>
+            <!--
+                Note: Titles and bylines will wrap automatically when necessary, so don't worry
+                if they get too long. You can also remove the "byline" span entirely if you don't
+                need a byline.
+            -->
+            <h2><a href="#">Welcome to Apollo-Rescue</a></h2>
+{#            <span class="byline">走在RoboCup夺冠路上</span>#}
+        </header>
+        <div class="info">
+            <!--
+                Note: The date should be formatted exactly as it's shown below. In particular, the
+                "least significant" characters of the month should be encapsulated in a <span>
+                element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+                Oh, and if you don't need a date for a particular page or post you can simply delete
+                the entire "date" element.
+
+            -->
+            <span class="date">
+                <span class="month">Oct<span>ober</span></span> <span class="day">19</span><span
+                    class="year">, 2014</span></span>
+            <!--
+                Note: You can change the number of list items in "stats" to whatever you want.
+            -->
+            <ul class="stats">
+                <li><a href="#" class="link-icon24 link-icon24-1">16</a></li>
+                <li><a href="#" class="link-icon24 link-icon24-2">32</a></li>
+{#                <li><a href="#" class="link-icon24 link-icon24-3">64</a></li>#}
+{#                <li><a href="#" class="link-icon24 link-icon24-4">128</a></li>#}
+            </ul>
+        </div>
+        <a href="#" class="image image-full"><img src="{% static 'images/hefei6.jpg' %}" alt=""/></a>
+
+        <p>
+            <strong>Apollo_Rescue</strong> 专注于智能体救援仿真项目，研究异构分布式群智能体的协同决策与优化，
+            目标是为现实的复杂环境救援提供参考，多次代表南京邮电大学参加国内外RoboCup赛事，获得优异成绩。
+        </p>
+
+    </article>
+
+{% endblock content %}
