@@ -3,6 +3,8 @@ from django.shortcuts import render, render_to_response
 # Create your views here.
 from mail import mail_manage
 
+def home(request):
+    return render_to_response('welcome.html')
 
 def test(request):
     return render_to_response('test.html')
