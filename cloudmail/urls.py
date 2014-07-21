@@ -10,9 +10,9 @@ urlpatterns = patterns('',
     # url(r'^$', 'cloudmail.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', 'views.home'),
+    url(r'^$', views.home),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^test/$', 'views.test'),
-    url(r'^search/', 'views.result'),
+    url(r'^test/$', views.test),
+    url(r'^search/', views.result),
 
 )
