@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.append('/var/www/cloudmail')
+sys.path.append('/var/www/cloudmail/cloudmail')
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
