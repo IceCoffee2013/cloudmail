@@ -3,8 +3,11 @@
 from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import smtplib, datetime
-from cloudmail.config import MAIL_ACCOUNT, MAIL_SERVER, MAIL_SECRET, MAIL_FROM
+import smtplib
+
+import datetime
+
+from mail.config import MAIL_FROM, MAIL_ACCOUNT, MAIL_SERVER, MAIL_SECRET
 
 
 def sendMail(address):
