@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'cloudmail.urls'
+ROOT_URLCONF = 'urls'
 
-WSGI_APPLICATION = 'cloudmail.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
